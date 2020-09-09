@@ -1,12 +1,14 @@
 import {LitElement, html,css} from 'lit-element';
 import  './timer-component.js'
 import './datetime-system-component.js'
+import './calendar-grid.js'
 
 class Calendar extends LitElement{
     render(){
         return html`
             <pss-timer></pss-timer>
             <pss-datetime></pss-datetime>
+            <pss-grid></pss-grid>
         `
     }
     static get styles() {
