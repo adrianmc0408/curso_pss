@@ -18,6 +18,9 @@ class ShortDate extends LitElement{
           :host { 
             font-size:0.75rem;
             color:var(--colorshortdate,grey);
+            display:flex;
+            align-items:center;
+            justify-items:center;
         }
         :host(:hover){
             color:var(--colorcalendar,white);

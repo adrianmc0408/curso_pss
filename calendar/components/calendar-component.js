@@ -17,6 +17,12 @@ class Calendar extends LitElement{
             color: var(--colorcalendar,white);
             background-color:var(--backgrouncolorcalendar,black);
             display:block; 
+            padding:1.25rem !important;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+            max-width:16.3125rem;
+            min-width:16.3125rem;
         }
         `;
       }

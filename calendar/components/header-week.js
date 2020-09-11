@@ -18,6 +18,8 @@ class HeaderWeek extends LitElement{
                 display:grid;
                 grid-template-columns: repeat(8,1.5625rem);
                 grid-gap: 0.5rem;
+                align-items:center;
+                justify-items:center;
             }
         `
     }

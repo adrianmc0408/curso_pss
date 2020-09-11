@@ -8,7 +8,8 @@ class TimerComponent extends LitElement{
         this._unsuscribe=PubSub.sub(chanel.CHANGEDATE,(date)=>this.date=FormatDate.getTimer(date));
     }
     render(){
-        return html `<div>${this.date}</div>`
+        return html `<div>${this.date}</div>
+            `
     }
     disconnectedCallback(){
         this._unsuscribe();
@@ -18,7 +19,7 @@ class TimerComponent extends LitElement{
     static get styles() {
         return css`
           :host { 
-            font-size:1.25rem
+            font-size:3.25rem
         }
         `;
       }

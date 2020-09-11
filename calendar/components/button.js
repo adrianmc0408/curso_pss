@@ -36,20 +36,33 @@ class Button extends LitElement {
     static get styles(){
         return css`
             .arrow {
-                border: solid black;
-                border-width: 0 3px 3px 0;
-                display: inline-block;
+                border: solid white;
+                border-width: 0 1px 1px 0;
+                display: block;
+                align-self:center;
+                justify-self:center;
                 padding: 3px;
             }
             .up {
                 transform: rotate(-135deg);
                 -webkit-transform: rotate(-135deg);
+                
             }
             
             .down {
                 transform: rotate(45deg);
                 -webkit-transform: rotate(45deg);
             } 
+            button {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+            }
+            
+        
         `
     }
     
